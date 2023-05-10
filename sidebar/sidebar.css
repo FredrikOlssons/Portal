@@ -1,0 +1,93 @@
+.sidebar {
+  width: 250px;
+  height: 100%;
+  background-color: #006298;
+  border-radius: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+}
+
+li {
+  padding: 10px;
+  position: relative;
+  height: 30px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul ul {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 250px;
+  background-color: #006298;
+  display: none;
+}
+
+li:hover > ul {
+  display: block;
+}
+
+li:hover {
+  background-color: #007acc;
+}
+
+.info-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: solid;
+  border-color: white;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.info-arrow-div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid white;
+}
+
+.li-expandable-item,
+.li-item-regular {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info {
+  content: attr(data-description);
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  background-color: lightgrey;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1;
+  max-width: 200px;
+  font-size: 12px;
+  text-align: center;
+}
