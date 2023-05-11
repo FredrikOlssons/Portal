@@ -1,8 +1,21 @@
+* {
+  box-sizing: border-box;
+
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
 .sidebar {
   width: 250px;
   height: 100%;
   background-color: #006298;
   border-radius: 10px;
+  padding: 5px;
+  margin: 5px 5px 5px 5px;
 }
 
 ul {
@@ -13,9 +26,9 @@ ul {
 }
 
 li {
-  padding: 10px;
+  padding: 5px;
   position: relative;
-  height: 30px;
+  height: 50px;
 }
 
 a {
@@ -23,11 +36,15 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: orange;
+}
+
 ul ul {
   position: absolute;
   top: 0;
   left: 100%;
-  width: 250px;
+  width: 270px;
   background-color: #006298;
   display: none;
 }
@@ -40,7 +57,7 @@ li:hover {
   background-color: #007acc;
 }
 
-/* .info-icon {
+.info-icon {
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -53,25 +70,6 @@ li:hover {
   align-items: center;
   font-weight: bold;
   font-size: 14px;
-} */
-
-.has-arrow::after {
-  content: "";
-  display: inline-block;
-  border: solid black;
-  border-width: 0 2px 2px 0;
-  padding: 3px;
-  transform: rotate(45deg);
-  margin-left: 5px;
-}
-
-.info-icon {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  background-color: blue;
-  border-radius: 50%;
-  margin-left: 5px;
 }
 
 .info-arrow-div {
@@ -101,8 +99,10 @@ li:hover {
   position: absolute;
   top: 50%;
   left: 25%;
-  background-color: lightgrey;
-  color: black;
+  background-color: rgba(9, 78, 121, 255);
+  border: 1px solid black;
+  color: white;
+  font-weight: bold;
   padding: 10px;
   border-radius: 5px;
   z-index: 1;
