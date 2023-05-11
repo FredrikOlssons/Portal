@@ -40,7 +40,7 @@ li:hover {
   background-color: #007acc;
 }
 
-/* .info-icon {
+.info-icon {
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -53,7 +53,7 @@ li:hover {
   align-items: center;
   font-weight: bold;
   font-size: 14px;
-} */
+}
 
 .has-arrow::after {
   content: "";
@@ -62,15 +62,6 @@ li:hover {
   border-width: 0 2px 2px 0;
   padding: 3px;
   transform: rotate(45deg);
-  margin-left: 5px;
-}
-
-.info-icon {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  background-color: blue;
-  border-radius: 50%;
   margin-left: 5px;
 }
 

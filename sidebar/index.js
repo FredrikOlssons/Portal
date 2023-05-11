@@ -4,17 +4,23 @@ const addInfoIconAndArrow = () => {
   listItems.forEach((item) => {
     const description = item.getAttribute("data-description");
 
-    if (description !== "") {
-      const infoIcon = document.createElement("div");
+    const containerDiv = document.createElement("div");
 
+    if (description !== "") {
+      containerDiv.classList.add("info-arrow-div");
+      const infoIcon = document.createElement("div");
+      infoIcon.innerText = "i";
       infoIcon.classList.add("info-icon");
-      item.appendChild(infoIcon);
+      //item.append(infoIcon);
+      containerDiv.append(infoIcon);
+      item.append(containerDiv);
     }
 
     if (item.classList.contains("li-expandable-item")) {
       const arrowIcon = document.createElement("div");
       arrowIcon.classList.add("arrow");
-      item.appendChild(arrowIcon);
+      containerDiv.append(arrowIcon);
+      item.append(containerDiv);
     }
   });
 };
