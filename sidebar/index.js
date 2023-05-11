@@ -11,7 +11,6 @@ const addInfoIconAndArrow = () => {
       const infoIcon = document.createElement("div");
       infoIcon.innerText = "i";
       infoIcon.classList.add("info-icon");
-      //item.append(infoIcon);
       containerDiv.append(infoIcon);
       item.append(containerDiv);
     }
