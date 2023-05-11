@@ -13,6 +13,19 @@ const addInfoIconAndArrow = () => {
       infoIcon.classList.add("info-icon");
       containerDiv.append(infoIcon);
       item.append(containerDiv);
+      const infoDiv = document.createElement("div");
+      infoDiv.classList.add("info");
+      infoDiv.innerText = description;
+      infoIcon.addEventListener("mouseover", () => {
+        const delay = 500;
+        timeoutId = setTimeout(() => {
+          containerDiv.append(infoDiv);
+        }, delay);
+        infoIcon.addEventListener("mouseout", () => {
+          clearTimeout(timeoutId);
+          infoDiv.remove();
+        });
+      });
     }
 
     if (item.classList.contains("li-expandable-item")) {
