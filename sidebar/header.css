@@ -1,8 +1,17 @@
+body {
+  box-sizing: border-box;
+}
+
 .header {
   position: fixed;
   top: 0px;
-
   border: 1px solid black;
-  width: 100%;
+  width: 100vw;
   background-color: rgba(0, 92, 149, 255);
+  margin: 0;
+  max-height: 100px;
+}
+
+.headerImg {
+  width: 100%;
 }

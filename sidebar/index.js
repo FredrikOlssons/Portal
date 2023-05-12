@@ -1,10 +1,26 @@
+const main = document.getElementsByName("main");
+let timeoutId;
+
 const addInfoIconAndArrow = () => {
   const listItems = document.querySelectorAll("li");
 
   listItems.forEach((item) => {
     const description = item.getAttribute("data-description");
-
     const containerDiv = document.createElement("div");
+
+    item.addEventListener("mouseenter", () => {
+      const nestedUl = item.querySelector("ul");
+      if (nestedUl) {
+        nestedUl.classList.add("show");
+      }
+    });
+
+    item.addEventListener("mouseleave", () => {
+      const nestedUl = item.querySelector("ul");
+      if (nestedUl) {
+        nestedUl.classList.remove("show");
+      }
+    });
 
     if (description !== "") {
       containerDiv.classList.add("info-arrow-div");
@@ -16,15 +32,13 @@ const addInfoIconAndArrow = () => {
       const infoDiv = document.createElement("div");
       infoDiv.classList.add("info");
       infoDiv.innerText = description;
-      infoIcon.addEventListener("mouseover", () => {
-        const delay = 500;
-        timeoutId = setTimeout(() => {
-          containerDiv.append(infoDiv);
-        }, delay);
-        infoIcon.addEventListener("mouseout", () => {
-          clearTimeout(timeoutId);
-          infoDiv.remove();
-        });
+      infoIcon.addEventListener("mouseenter", () => {
+        clearTimeout(timeoutId);
+        containerDiv.append(infoDiv);
+      });
+      infoIcon.addEventListener("mouseleave", () => {
+        clearTimeout(timeoutId);
+        infoDiv.remove();
       });
     }
 
