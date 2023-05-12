@@ -4,8 +4,6 @@ let timeoutId;
 const addInfoIconAndArrow = () => {
   childElements.forEach(function (childElement) {
     const parentUl = childElement.closest("ul");
-
-    parentUl.classList.add("potato");
   });
 
   const listItems = document.querySelectorAll("li");
@@ -22,7 +20,7 @@ const addInfoIconAndArrow = () => {
     });
 
     item.addEventListener("mouseleave", () => {
-      const nestedUl = item.querySelector(parentUl);
+      const nestedUl = item.querySelector("ul");
 
       if (nestedUl) {
         nestedUl.classList.remove("show");

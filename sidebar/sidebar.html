@@ -9,7 +9,6 @@
     <script defer src="./main.js"></script>
     <script defer>
       function changeIframeUrl(url) {
-        console.log("gurka");
         let iframe = document.getElementById("myIframe");
         iframe.src = url;
         console.log(iframe.src);
@@ -262,11 +261,14 @@ Beläggningen som visas för avdelning 35 är justerad då avdelningen har 4 vå
                       >Beläggning och vårdtider (PBI)</a
                     >
                   </li>
-                  <li class="li-item-regular list-items" data-description="">
+                  <li
+                    class="li-item-regular list-items"
+                    data-description="Antal vtf och DRG-poäng m.m. rapport per
+                      område, klinik och avdelning månad"
+                  >
                     <a
                       href="http://analytics.vgregion.se/ibmcognos/bi/?perspective=classicviewer&id=i11185443AB6B41858ADCF6C9ACEA5EB7&objRef=i11185443AB6B41858ADCF6C9ACEA5EB7&action=run&format=HTML&cmPropStr=%7B%22id%22%3A%22i11185443AB6B41858ADCF6C9ACEA5EB7%22%2C%22type%22%3A%22report%22%2C%22defaultName%22%3A%22SSv92%20DRG-ersatt%2C%20antal%20vtf%20o%20DRG-po%C3%A4ng%20mm%20rapport%20per%20omr%C3%A5de%2C%20klinik%20och%20avdelning%20m%C3%A5nadsvis%22%2C%22permissions%22%3A%5B%22execute%22%2C%22read%22%2C%22traverse%22%2C%22write%22%5D%7D"
-                      >DRG-ersatt, antal vtf och DRG-poäng m.m. rapport per
-                      område, klinik och avdelning månad (Cognos)</a
+                      >DRG-ersatt (Cognos)</a
                     >
                   </li>
                   <li
@@ -300,8 +302,8 @@ Möjlighet finns att se procentandelen per medicinskt verksamhetsområde (MVO)/s
                     <a
                       href="http://analytics.vgregion.se/ibmcognos/bi/?perspective=classicviewer&id=iFC845055BD324F9F83A11611061FD54F&objRef=iFC845055BD324F9F83A11611061FD54F&action=run&format=HTML&cmPropStr=%7B%22id%22%3A%22iFC845055BD324F9F83A11611061FD54F%22%2C%22type%22%3A%22report%22%2C%22defaultName%22%3A%22SSv97%20V%C3%A5rddagsersatt%2C%20v%C3%A5rddagar%20och%20inskrivningar%202021%20%28val%20avtalstyp%29%22%2C%22permissions%22%3A%5B%22execute%22%2C%22read%22%2C%22traverse%22%2C%22write%22%5D%7D
 "
-                      >Vårddagsersatt, vårddagar och inskrivningar 2021 (val
-                      avtalstyp) (Cognos)</a
+                      >Vårddagsersatt, vårddagar och inskrivningar 2021
+                      (Cognos)</a
                     >
                   </li>
                   <li
@@ -327,11 +329,14 @@ Möjlighet finns att se procentandelen per medicinskt verksamhetsområde (MVO)/s
               <li class="li-expandable-item list-items" data-description="">
                 <a href="#">Produktion/patientflöden öppenvård</a>
                 <ul>
-                  <li class="li-item-regular list-items">
+                  <li
+                    class="li-item-regular list-items"
+                    data-description="Variation per vecka, veckodag och
+                      klockslag "
+                  >
                     <a
                       href="http://analytics.vgregion.se/ibmcognos/bi/?perspective=classicviewer&id=i785EDC5366164C3385D187DD6D4AA918&objRef=i785EDC5366164C3385D187DD6D4AA918&action=run&format=HTML&cmPropStr=%7B%22id%22%3A%22i785EDC5366164C3385D187DD6D4AA918%22%2C%22type%22%3A%22report%22%2C%22defaultName%22%3A%22S%C3%96v242%20Bes%C3%B6k%20per%20mottagning%20Variation%20per%20vecka%2C%20veckodag%20o%20klockslag%22%2C%22permissions%22%3A%5B%22execute%22%2C%22read%22%2C%22traverse%22%2C%22write%22%5D%7D"
-                      >Besök per mottagning variation per vecka, veckodag och
-                      klockslag (Cognos)</a
+                      >Besök per mottagning (Cognos)</a
                     >
                   </li>
                   <li
@@ -536,6 +541,84 @@ Möjlighet finns att se procentandelen per medicinskt verksamhetsområde (MVO)/s
                 </ul>
               </li>
               <li class="li-expandable-item list-items" data-description="">
+                <a href="#">Vuxenpsykiatri</a>
+                <ul>
+                  <li
+                    class="li-expandable-item list-items"
+                    data-description="Rapporten används för årlig rapportering till NYSAM och innehåller resultat på verksamhetsnivå för både öppen- och slutenvård."
+                  >
+                    <a href="#">Nysam (PBI)</a>
+                    <ul>
+                      <li
+                        class="li-item-regular list-items"
+                        data-description=""
+                      >
+                        <a
+                          href="https://pbirs.vgregion.se/reports_pbirs/powerbi/Sj%C3%A4lvbetj%C3%A4ning/NU/Verksamhet/Omr_III/VUP/VUP%20nysam?rs:embed=true"
+                          >Vuxenpsykiatri</a
+                        >
+                      </li>
+                      <li
+                        class="li-item-regular list-items"
+                        data-description=""
+                      >
+                        <a
+                          href="https://pbirs.vgregion.se/reports_pbirs/powerbi/Sj%C3%A4lvbetj%C3%A4ning/NU/Verksamhet/Omr_III/VUP/RPV%20nysam?rs:embed=true"
+                          >Rättspsykiatri</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li
+                    class="li-item-regular list-items"
+                    data-description="Rapporten innehåller information om vårdbegäran, kö och utförda besök på OCD-teamen i NU-sjukvården och SÄS."
+                  >
+                    <a
+                      href="https://pbirs.vgregion.se/reports_pbirs/powerbi/Sj%C3%A4lvbetj%C3%A4ning/NU/Verksamhet/Omr_III/VUP/OCD?rs:embed=true"
+                      >OCD (PBI)</a
+                    >
+                  </li>
+                  <li
+                    class="li-item-regular list-items"
+                    data-description="Rapporten visar patienter med tvångsvård per vårdform och åtgärder."
+                  >
+                    <a
+                      href="https://pbirs.vgregion.se/Reports_PBIRS/powerbi/Sj%C3%A4lvbetj%C3%A4ning/VGR/Projekt/Uppf%C3%B6ljning%20Tv%C3%A5ngsv%C3%A5rd/PsykiatriRapport?rs:embed=true"
+                      >OCD-teamen i NU-sjukvården och SÄS. Tvångsvård
+                      (sekretess) (PBI)</a
+                    >
+                  </li>
+                  <li
+                    class="li-item-regular list-items"
+                    data-description="Rapporten innehåller uppföljning om antal vistelser där patienten haft ett vårdintyg. Rapporten innehåller även uppföljning av antal vistelser där patienten haft utfärdande om LVM, Lagen om vård av missbrukare."
+                  >
+                    <a
+                      href="https://pbirs.vgregion.se/reports_pbirs/powerbi/Sj%C3%A4lvbetj%C3%A4ning/NU/Verksamhet/Omr_III/VUP/V%C3%A5rdintyg%20och%20LMV?rs:embed=true"
+                      >Regionalt rapport. Vårdintyg och LVM (PBI)</a
+                    >
+                  </li>
+                  <li
+                    class="li-item-regular list-items"
+                    data-description="Rapporten innehåller uppföljning av arbete med vårdplaner inom vuxenpsykiatrin. Den kan även användas som ett verktyg för vårdgivare att söka vilka patienter med planerat besök den kommande veckan som kan behöva få vårdplanen uppdaterad. Med utökad behörighet finns möjlighet att se personnummer per fast vårdkontakt. Öppenvård - diagnosfördelning (PBI)"
+                  >
+                    <a
+                      href="https://pbirs.vgregion.se/reports_pbirs/powerbi/Sj%C3%A4lvbetj%C3%A4ning/NU/Verksamhet/Omr_III/VUP/V%C3%A5rdplan%20VUP?rs:embed=true"
+                      >Vårdplan vuxenpsykiatri (PBI)</a
+                    >
+                  </li>
+                  <li
+                    class="li-item-regular list-items"
+                    data-description="Rapporten visar fördelning av diagnoser per mottagning. Uppdateras varje månad."
+                  >
+                    <a
+                      href="https://pbirs.vgregion.se/reports_pbirs/powerbi/Sj%C3%A4lvbetj%C3%A4ning/NU/Verksamhet/Omr_III/diagnosf%C3%B6rdelning%20psykiatri?rs:embed=true"
+                      >Öppenvård - diagnosfördelning</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="li-expandable-item list-items" data-description="">
                 <a href="#">Kvinnosjukvård</a>
                 <ul>
                   <li
@@ -730,83 +813,6 @@ Varje skopist kan få sin statistik över utförda undersökningar. Rapporten up
                     </li>
                   </ul>
                 </li>
-                <li class="li-expandable-item list-items" data-description="">
-                  <a href="#">Vuxenpsykiatri</a>
-                  <ul>
-                    <li
-                      class="li-expandable-item list-items"
-                      data-description="Rapporten används för årlig rapportering till NYSAM och innehåller resultat på verksamhetsnivå för både öppen- och slutenvård."
-                    >
-                      <a href="#">Nysam (PBI)</a>
-                      <ul>
-                        <li
-                          class="li-item-regular list-items"
-                          data-description=""
-                        >
-                          <a
-                            href="https://pbirs.vgregion.se/reports_pbirs/powerbi/Sj%C3%A4lvbetj%C3%A4ning/NU/Verksamhet/Omr_III/VUP/VUP%20nysam?rs:embed=true"
-                            >Vuxenpsykiatri</a
-                          >
-                        </li>
-                        <li
-                          class="li-item-regular list-items"
-                          data-description=""
-                        >
-                          <a
-                            href="https://pbirs.vgregion.se/reports_pbirs/powerbi/Sj%C3%A4lvbetj%C3%A4ning/NU/Verksamhet/Omr_III/VUP/RPV%20nysam?rs:embed=true"
-                            >Rättspsykiatri</a
-                          >
-                        </li>
-                      </ul>
-                    </li>
-                    <li
-                      class="li-item-regular list-items"
-                      data-description="Rapporten innehåller information om vårdbegäran, kö och utförda besök på OCD-teamen i NU-sjukvården och SÄS."
-                    >
-                      <a
-                        href="https://pbirs.vgregion.se/reports_pbirs/powerbi/Sj%C3%A4lvbetj%C3%A4ning/NU/Verksamhet/Omr_III/VUP/OCD?rs:embed=true"
-                        >OCD (PBI)</a
-                      >
-                    </li>
-                    <li
-                      class="li-item-regular list-items"
-                      data-description="Rapporten visar patienter med tvångsvård per vårdform och åtgärder."
-                    >
-                      <a
-                        href="https://pbirs.vgregion.se/Reports_PBIRS/powerbi/Sj%C3%A4lvbetj%C3%A4ning/VGR/Projekt/Uppf%C3%B6ljning%20Tv%C3%A5ngsv%C3%A5rd/PsykiatriRapport?rs:embed=true"
-                        >OCD-teamen i NU-sjukvården och SÄS. Tvångsvård
-                        (sekretess) (PBI)</a
-                      >
-                    </li>
-                    <li
-                      class="li-item-regular list-items"
-                      data-description="Rapporten innehåller uppföljning om antal vistelser där patienten haft ett vårdintyg. Rapporten innehåller även uppföljning av antal vistelser där patienten haft utfärdande om LVM, Lagen om vård av missbrukare."
-                    >
-                      <a
-                        href="https://pbirs.vgregion.se/reports_pbirs/powerbi/Sj%C3%A4lvbetj%C3%A4ning/NU/Verksamhet/Omr_III/VUP/V%C3%A5rdintyg%20och%20LMV?rs:embed=true"
-                        >Regionalt rapport. Vårdintyg och LVM (PBI)</a
-                      >
-                    </li>
-                    <li
-                      class="li-item-regular list-items"
-                      data-description="Rapporten innehåller uppföljning av arbete med vårdplaner inom vuxenpsykiatrin. Den kan även användas som ett verktyg för vårdgivare att söka vilka patienter med planerat besök den kommande veckan som kan behöva få vårdplanen uppdaterad. Med utökad behörighet finns möjlighet att se personnummer per fast vårdkontakt. Öppenvård - diagnosfördelning (PBI)"
-                    >
-                      <a
-                        href="https://pbirs.vgregion.se/reports_pbirs/powerbi/Sj%C3%A4lvbetj%C3%A4ning/NU/Verksamhet/Omr_III/VUP/V%C3%A5rdplan%20VUP?rs:embed=true"
-                        >Vårdplan vuxenpsykiatri (PBI)</a
-                      >
-                    </li>
-                    <li
-                      class="li-item-regular list-items"
-                      data-description="Rapporten visar fördelning av diagnoser per mottagning. Uppdateras varje månad."
-                    >
-                      <a
-                        href="https://pbirs.vgregion.se/reports_pbirs/powerbi/Sj%C3%A4lvbetj%C3%A4ning/NU/Verksamhet/Omr_III/diagnosf%C3%B6rdelning%20psykiatri?rs:embed=true"
-                        >Öppenvård - diagnosfördelning</a
-                      >
-                    </li>
-                  </ul>
-                </li>
               </p>
             </ul>
           </li>
@@ -919,7 +925,7 @@ Varje skopist kan få sin statistik över utförda undersökningar. Rapporten up
                   <li class="li-item-regular list-items" data-description="">
                     <a
                       href="https://pbirs.vgregion.se/reports_pbirs/powerbi/Sj%C3%A4lvbetj%C3%A4ning/NU/Gemensam/Processer/Patient%C3%B6veriskt%20Melior?filter=Elvis_pagaende_vistelser%2FKod%20eq%20%27Avd43%27&rs:embed=true"
-                      >Avdelning 43
+                      >Avdelning 4
                     </a>
                   </li>
                   <li class="li-item-regular list-items" data-description="">
