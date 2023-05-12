@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="./sidebar.css" />
     <script defer src="./index.js"></script>
     <script defer src="./main.js"></script>
+    <script defer>
+      function changeIframeUrl(url) {
+        console.log("gurka");
+        let iframe = document.getElementById("myIframe");
+        iframe.src = url;
+        console.log(iframe.src);
+      }
+    </script>
     <title>Document</title>
   </head>
   <body>
@@ -45,7 +53,8 @@
                     data-description="Statistik som visar provsvar för pågående säsongsvirussåsom calici, säsongsinfluensa och RS-virus."
                   >
                     <a
-                      href="https://pbirs.vgregion.se/Reports_PBIRS/powerbi/Sj%C3%A4lvbetj%C3%A4ning/NU/Gemensam/Covid-19/%C3%96versikt%20COVID-19?rs:embed=true"
+                      href="#"
+                      onclick="changeIframeUrl('https://doc-0o-74-adspreview.googleusercontent.com/preview/9o5bees06oeguhr10neq55qcti27eh7n/m5ee2ipj73dbrl13re2h50fgl5bina08/1561032000000/61321980/previewuser/ads-richmedia-studio.61321980?render=blank')"
                       >Säsongsvirus (influensa, Calici m.fl.) (PBI)</a
                     >
                   </li>
@@ -835,40 +844,12 @@ Varje skopist kan få sin statistik över utförda undersökningar. Rapporten up
                   </li>
                 </ul>
               </li>
-              <li class="li-expandable-item list-items">
-                <a href="#">Kostnad per patient i öppen- och slutenvård</a>
-                <ul>
-                  <li
-                    class="li-item-regular list-items"
-                    data-description="Rapporten används främst för att söka kostnad per patienter antingen via Diagnoskod(-er) och/eller KVÅ-kod(-er) under besök eller vårdtillfälle. Där vi ser vilka särkostnader så som till exempel lab, röntgen, IVA och operation som matchats till varje besök eller vårdtillfälle. "
-                  >
-                    <a
-                      href="https://pbirs.vgregion.se/reports_pbirs/powerbi/Sj%C3%A4lvbetj%C3%A4ning/NU/Ekonomi/Kostnad%20per%20patient%20i%20%C3%B6ppen%20och%20slutenv%C3%A5rd?rs:embed=true"
-                      >Kostnad per patient i öppen- och slutenvård
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="li-expandable-item list-items" data-description="">
-                <a href="#">Osignerade aktiviteter i Melior</a>
-                <ul>
-                  <li
-                    class="li-item-regular list-items"
-                    data-description="Rapporten används för att överskådligt se antalet osignerade anteckningar, labbsvar och röntgensvar i Melior. Presenteras per läkare. Rapporten uppdateras fredagar runt kl. 13.00. Särskild flik för att följa upp bemanningsläkare inom område I."
-                  >
-                    <a
-                      href="https://pbirs.vgregion.se/reports_pbirs/powerbi/Sj%C3%A4lvbetj%C3%A4ning/NU/Verksamhet/Omr_I/Osignerat%20Melior?rs:embed=true"
-                      >Osignerade aktiviteter Melior
-                    </a>
-                  </li>
-                </ul>
-              </li>
               <li
                 class="li-expandable-item list-items"
                 data-description="I patientöversikten Melior visas en lista med avdelningens just nu inskrivna patienter. Där visas information från journalen med uppdatering var 20 minut. Chefer har grundbehörighet för avdelningar inom sitt verksamhetsområde. För att beställa behörighet till personal eller gemensamma konton, mejla enklast lista till utdata.nu@vgregion.se."
               >
                 <a href="#">Patientöversikt Melior</a>
-                <ul>
+                <ul class="ul-columns">
                   <li class="li-item-regular list-items" data-description="">
                     <a
                       href="https://pbirs.vgregion.se/reports_pbirs/powerbi/Sj%C3%A4lvbetj%C3%A4ning/NU/Gemensam/Processer/Patient%C3%B6veriskt%20Melior?filter=Elvis_pagaende_vistelser%2FKod%20eq%20%27Avd3%27&rs:embed=true"
@@ -991,6 +972,34 @@ Varje skopist kan få sin statistik över utförda undersökningar. Rapporten up
                   </li>
                 </ul>
               </li>
+              <li class="li-expandable-item list-items">
+                <a href="#">Kostnad per patient i öppen- och slutenvård</a>
+                <ul>
+                  <li
+                    class="li-item-regular list-items"
+                    data-description="Rapporten används främst för att söka kostnad per patienter antingen via Diagnoskod(-er) och/eller KVÅ-kod(-er) under besök eller vårdtillfälle. Där vi ser vilka särkostnader så som till exempel lab, röntgen, IVA och operation som matchats till varje besök eller vårdtillfälle. "
+                  >
+                    <a
+                      href="https://pbirs.vgregion.se/reports_pbirs/powerbi/Sj%C3%A4lvbetj%C3%A4ning/NU/Ekonomi/Kostnad%20per%20patient%20i%20%C3%B6ppen%20och%20slutenv%C3%A5rd?rs:embed=true"
+                      >Kostnad per patient i öppen- och slutenvård
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="li-expandable-item list-items" data-description="">
+                <a href="#">Osignerade aktiviteter i Melior</a>
+                <ul>
+                  <li
+                    class="li-item-regular list-items"
+                    data-description="Rapporten används för att överskådligt se antalet osignerade anteckningar, labbsvar och röntgensvar i Melior. Presenteras per läkare. Rapporten uppdateras fredagar runt kl. 13.00. Särskild flik för att följa upp bemanningsläkare inom område I."
+                  >
+                    <a
+                      href="https://pbirs.vgregion.se/reports_pbirs/powerbi/Sj%C3%A4lvbetj%C3%A4ning/NU/Verksamhet/Omr_I/Osignerat%20Melior?rs:embed=true"
+                      >Osignerade aktiviteter Melior
+                    </a>
+                  </li>
+                </ul>
+              </li>
               <li
                 class="li-expandable-item list-items"
                 data-description="Standardiserade vårdförlopp (SVF) beskriver vilka utredningar och första behandlingar som ska göras inom en viss cancerdiagnos, samt vilka tidsgränser som ska eftersträvas från välgrundad misstanke till start av första behandling. Uppföljningsrapport av SVF visar antal påbörjade/antal avslutade på VGR-nivå med möjlighet att filtrera på sjukhus."
@@ -1042,6 +1051,13 @@ Varje skopist kan få sin statistik över utförda undersökningar. Rapporten up
             </ul>
           </li>
         </ul>
+      </div>
+      <div id="myIframe">
+        <iframe
+          src="https://doc-0o-74-adspreview.googleusercontent.com/preview/9o5bees06oeguhr10neq55qcti27eh7n/m5ee2ipj73dbrl13re2h50fgl5bina08/1561032000000/61321980/previewuser/ads-richmedia-studio.61321980?render=blank&creativeId=ads-richmedia-studio.61321980&creativeId=ads-richmedia-studio.61321980&ewp=1&eroad=1&hiep=0&adv=60057676&richmedia=true&zx=qkn9oc6f5zo5&previewMode=blank&accessKey=e361de4b129a12fcb9f3d5ee2f9253a2"
+          class="iframeImg"
+          sandbox="allow-scripts"
+        ></iframe>
       </div>
     </main>
   </body>

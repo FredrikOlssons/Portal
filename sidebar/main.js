@@ -8,16 +8,16 @@ window.addEventListener("DOMContentLoaded", () => {
     let availableHeight = main.clientHeight;
     const bottomMain = availableHeight - headerHeight;
 
-    ulElements.forEach((ul) => {
+    /* ulElements.forEach((ul) => {
       const listItems = ul.querySelectorAll(".list-items-regular");
-      const listItemsHeight = listItems[0].clientHeight;
+     const listItemsHeight = listItems[0].clientHeight;
 
       if (listItemsHeight > bottomMain) {
         ul.style.columnCount = 2;
       } else {
         ul.style.columnCount = 1;
       }
-    });
+    }); */
   };
 
   setLiColumns();

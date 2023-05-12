@@ -6,11 +6,12 @@
 
 body {
   font-family: Helvetica, Arial, sans-serif;
+  overflow: hidden;
 }
 
-/* main {
-  height: calc(100vh - 100px);
-} */
+main {
+  display: flex;
+}
 
 .sidebar {
   width: 250px;
@@ -18,6 +19,7 @@ body {
   border-radius: 10px;
   padding: 5px;
   margin: 5px 5px 5px 5px;
+  height: fit-content;
 }
 
 ul {
@@ -31,6 +33,10 @@ ul {
   min-width: 400px;
   columns: 2;
   max-height: 400px;
+}
+
+.ul-test {
+  background-color: purple !important;
 }
 
 li {
@@ -108,7 +114,7 @@ li:hover {
   content: attr(data-description);
   overflow: hidden;
   position: absolute;
-  top: 50%;
+  bottom: 50%;
   left: 25%;
   background-color: rgba(9, 78, 121, 255);
   border: 1px solid black;
@@ -120,4 +126,17 @@ li:hover {
   max-width: 200px;
   font-size: 12px;
   text-align: center;
+}
+
+#myIframe {
+  width: calc(100% - 250px);
+  height: 100%;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px 5px 5px 5px;
+}
+
+.iframeImg {
+  width: 100%;
+  height: 100%;
 }
