@@ -58,6 +58,28 @@ const addInfoIconAndArrow = () => {
   });
 };
 
+const keepMenuOpen = () => {
+  const listItems = document.querySelectorAll(".list-items");
+  const overlay = document.querySelector(".hover");
+  let timer;
+
+  listItems.forEach((item) => {
+    item.addEventListener("mouseenter", () => {
+      clearTimeout(timer);
+      overlay.style.display = "none";
+    });
+  });
+
+  overlay.addEventListener("mouseenter", () => {
+    clearTimeout(timer);
+  });
+
+  overlay.addEventListener("mouseleave", () => {
+    overlay.style.display = "none";
+  });
+};
+
 window.onload = () => {
   addInfoIconAndArrow();
+  keepMenuOpen();
 };
