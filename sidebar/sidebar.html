@@ -12,7 +12,9 @@
     <script defer>
       function changeIframeUrl(url) {
         let iframe = document.getElementById("myIframe");
+        console.log(iframe);
         iframe.src = url;
+        console.log(url, "url");
         console.log(iframe.src);
       }
     </script>
