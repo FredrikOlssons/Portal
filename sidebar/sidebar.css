@@ -38,6 +38,7 @@ li {
   padding: 5px;
   position: relative;
   height: 50px;
+  cursor: pointer;
 }
 
 a {
@@ -62,9 +63,6 @@ ul ul {
 ul ul.show {
   display: block;
 }
-/* li:hover > ul {
-  display: block;
-} */
 
 li:hover {
   background-color: #007acc;
@@ -83,6 +81,11 @@ li:hover {
   align-items: center;
   font-weight: bold;
   font-size: 14px;
+}
+
+.info-icon:hover {
+  color: orange;
+  border-color: orange;
 }
 
 .info-arrow-div {

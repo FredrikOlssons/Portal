@@ -11,11 +11,10 @@
     <script defer src="./search.js"></script>
     <script defer>
       function changeIframeUrl(url) {
-        let iframe = document.getElementById("myIframe");
-        console.log(iframe);
+        let iframe = document.getElementsByClassName("iframeImg");
         iframe.src = url;
-        console.log(url, "url");
         console.log(iframe.src);
+        console.log(iframe);
       }
     </script>
     <title>Document</title>
@@ -46,8 +45,7 @@
                     class="li-item-regular list-items"
                     data-description=" Rapporten är en översikt över covid-19-läget i NU-sjukvården och visar hur många som söker till akuten med symptom, hur många som testas (både för covid-19 och antikroppar) samt hur många inneliggande, IVA-vårdade och utskrivna patienter med covid-19 som NU-sjukvården har."
                   >
-                    <a
-                      href="https://pbirs.vgregion.se/Reports_PBIRS/powerbi/Sj%C3%A4lvbetj%C3%A4ning/NU/Gemensam/"
+                    <a href="#" onclick="changeIframeUrl('./figur1a-32023.png')"
                       >Covid-19 (PBI)</a
                     >
                   </li>
@@ -1064,7 +1062,7 @@ Varje skopist kan få sin statistik över utförda undersökningar. Rapporten up
       </div>
       <div id="myIframe">
         <iframe
-          src="./figur1a-32023.png"
+          src="https://doc-0o-74-adspreview.googleusercontent.com/preview/9o5bees06oeguhr10neq55qcti27eh7n/m5ee2ipj73dbrl13re2h50fgl5bina08/1561032000000/61321980/previewuser/ads-richmedia-studio.61321980?render=blank"
           class="iframeImg"
           sandbox="allow-scripts"
         ></iframe>
